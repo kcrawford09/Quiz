@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+
+    <style>
+        body,html {
+            background-color: #3E2723;
+            text-align: center;
+        }
+
+        #quiz, #answer {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #answer {
+            display: none;
+        }
+
+        h1 {
+            color: #D7CCC8;
+            font-family: 'Shadows Into Light', cursive;
+        }
+
+        p, form {
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 24px;
+            color: #B2DFDB;
+        }
+
+        .thumb {
+            width: 180px;
+            margin-left: auto;
+            margin-right: auto;
+            display: inline-block;
+            border: solid 1px black;
+        }
+
+        img {
+            width: 180px;
+        }
+
+        input.chk {
+            margin-left: 0;
+        }
+
+        input[type="radio"]:checked {
+            border: 5px solid red;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+<div id="quiz">
+    <h1> How caffinated is your life?</h1>
+
+    <form>
+
+        <p id='openingParagraph'> Do you consider yourself a coffee person? Let's see if you need to go to
+            java-therapy. </p>
+
+        <br/>
+
+
+        <p> When did you start drinking coffee? </p>
+
+        <br/>
+
+        <div class="thumb">
+            <label for="highschool"><img src="img/highschool.jpg"></label>
+            <input type="radio" class="chk" name="question1" id="highschool" value="high">
+        </div>
+
+        <div class="thumb">
+            <label for="job"><img src="img/my_first_job.jpg"></label>
+            <input type="radio" class="chk" name="question1" id="job" value="low">
+        </div>
+
+        <br class="clear">
+
+
+        <p id='questionTwo'> How do you prefer your coffee? </p>
+
+        <br/>
+
+
+        <div class="thumb">
+            <label for="black"><img src="img/black_coffee.jpg"></label>
+            <input type="radio" class="chk" name="question2" id="black" value="high">
+        </div>
+
+        <div class="thumb">
+            <label for="light"><img src="img/light_coffee.png"></label>
+            <input type="radio" class="chk" name="question2" id="light" value="low">
+        </div>
+
+        <br class="clear">
+
+        <!--<img src="img/black_coffee.jpg"> <img src="img/light_coffee.png">-->
+
+
+        <p id='questionThree'> What kind of coffee machine do you own? </p>
+
+        <br/>
+
+        <div class="thumb">
+            <label for="machine"><img src="img/keurig.jpg"></label>
+            <input type="radio" class="chk" name="question3" id="machine" value="high">
+        </div>
+
+        <div class="thumb">
+            <label for="keurig"><img src="img/coffeepot.gif"></label>
+            <input type="radio" class="chk" name="question3" id="keurig" value="low">
+        </div>
+
+        <br class="clear">
+
+        <!--<img src="img/keurig.jpg"> <img src="img/coffeepot.gif">-->
+
+
+        <p id='questionFour'> Do you have a special coffee budget? </p>
+
+        <br/>
+
+        <div class="thumb">
+            <label for="bank"><img src="img/piggy%20bank%20-%20Copy.jpg"></label>
+            <input type="radio" class="chk" name="question4" id="bank" value="high">
+        </div>
+
+        <div class="thumb">
+            <label for="empty"><img src="img/empty_wallet.jpg"></label>
+            <input type="radio" class="chk" name="question4" id="empty" value="low">
+        </div>
+
+        <br class="clear">
+
+        <!--<img src="img/piggy%20bank%20-%20Copy.jpg"> <img src="img/empty_wallet.jpg">-->
+
+
+        <p id='questionFive'> If coffee is offered to you even after you had your fist cup will you take it? </p>
+
+        <br/>
+
+        <div class="thumb">
+            <label for="more"><img src="img/offered_coffee.jpg"></label>
+            <input type="radio" class="chk" name="question5" id="more" value="high">
+        </div>
+
+        <div class="thumb">
+            <label for="no"><img src="img/no-coffee.jpg"></label>
+            <input type="radio" class="chk" name="question5" id="no" value="low">
+        </div>
+
+        <br class="clear">
+
+
+        <!--<img src="img/offered_coffee.jpg"> <img src="img/no-coffee.jpg">-->
+
+
+        <p id='questionSix'> If you had to choose between a shower and coffee what would it be? </p>
+
+        <br/>
+
+
+        <div class="thumb">
+            <label for="shower"><img src="img/MakingCoffee_5.jpg"></label>
+            <input type="radio" class="chk" name="question6" id="shower" value="high">
+        </div>
+
+        <div class="thumb">
+            <label for="grinds"><img src="img/Hot-Shower.jpg"></label>
+            <input type="radio" class="chk" name="question6" id="grinds" value="low">
+        </div>
+
+        <br class="clear">
+
+        <!--<img src="img/MakingCoffee_5.jpg"> <img src="img/Hot-Shower.jpg">-->
+
+
+        <p id='questionSeven'> Is making coffee part of your morning routine? </p>
+
+        <br/>
+
+        <div class="thumb">
+            <label for="yes"><img src="img/making_coffee_morning_routine.jpg"></label>
+            <input type="radio" class="chk" name="question7" id="yes" value="high">
+        </div>
+
+        <div class="thumb">
+            <label for="nope"><img src="img/no.jpg"></label>
+            <input type="radio" class="chk" name="question7" id="nope" value="low">
+        </div>
+
+        <br class="clear">
+
+        <!--<img src="img/making_coffee_morning_routine.jpg"> <img src="img/no.jpg">-->
+
+
+        <p id='questionEight'> On average how many cups of coffee do you drink in a day? </p>
+
+        <br/>
+
+        <div class="thumb">
+            <label for="multiple"><img src="img/multiple_coffee_cups.jpg"></label>
+            <input type="radio" class="chk" name="question8" id="multiple" value="high">
+        </div>
+
+        <div class="thumb">
+            <label for="one"><img src="img/holding%20coffee%20cups.jpg"></label>
+            <input type="radio" class="chk" name="question8" id="one" value="low">
+        </div>
+
+        <br class="clear">
+
+
+        <!--<img src="img/multiple_coffee_cups.jpg"> <img src="img/holding%20coffee%20cups.jpg">-->
+
+        <p id='questionNine'> Do you need coffee to function in the morning? </p>
+
+        <br/>
+
+        <div class="thumb">
+            <label for="zombie"><img src="img/need_coffee_morning.jpg"></label>
+            <input type="radio" class="chk" name="question9" id="zombie" value="high">
+        </div>
+
+        <div class="thumb">
+            <label for="sunshine"><img src="img/no_coffee_morning.jpg"></label>
+            <input type="radio" class="chk" name="question9" id="sunshine" value="low">
+        </div>
+
+        <br class="clear">
+
+        <!--<img src="img/no_coffee_morning.jpg">-->
+
+        <p id='questionTen'> How many coffee shops do you know in your area? </p>
+
+        <br>
+
+        <div class="thumb">
+            <label for="shops"><img src="img/coffee_shops.jpg"></label>
+            <input type="radio" class="chk" name="question10" id="shops" value="high">
+        </div>
+
+        <div class="thumb">
+            <label for="lost"><img src="img/no_coffee_shops.jpg"></label>
+            <input type="radio" class="chk" name="question10" id="lost" value="low">
+        </div>
+
+        <br class="clear">
+
+        <!--<img src="img/coffee_shops.jpg"> <img src="img/no_coffee_shops.jpg">-->
+        <input type="button" name="submit" value="Submit" id="submit">
+    </form>
+</div>
+<div id="answer">
+    <p id="coffeeType"></p>
+    <input type="button" name="refresh" value="Play Again!" onClick="window.location.reload()">
+</div>
+
+</body>
+
+<script src="quiz.js" type="application/javascript"></script>
+</html>
